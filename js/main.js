@@ -11,3 +11,9 @@
     .on('exit', function (el) {
         el.classList.remove("inview");
     });
+
+
+    const init = function(){
+        cssScrollSnapPolyfill()
+    }
+    init();
