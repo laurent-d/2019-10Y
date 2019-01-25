@@ -1,0 +1,139 @@
+@charset "utf-8";
+@viewport {
+  width: device-width;
+}
+
+/* Resets annoying things */
+
+* {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+html {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-display: optional;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+ol,
+ul {
+  list-style-position: inside;
+}
+
+/* Misc element fixes */
+
+a {
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Buttons and forms */
+
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  white-space: normal;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.618;
+  color: inherit;
+}
+
+::-moz-placeholder {
+  opacity: 0.618;
+  color: inherit;
+}
+
+:-ms-input-placeholder {
+  opacity: 0.618;
+  color: inherit;
+}
+
+::placeholder {
+  opacity: 0.618;
+  color: inherit;
+}
+
+:disabled {
+  opacity: 0.618;
+  cursor: not-allowed;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  resize: vertical;
+  display: block;
+}
+
+/* Removes touch input lag from tappable things */
+a,
+button,
+input,
+textarea,
+select,
+label {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+/* https://mobile.twitter.com/LeaVerou/status/1045768279753666562 */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
