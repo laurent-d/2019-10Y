@@ -130,10 +130,10 @@ label {
   outline: none;
 }
 
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0s !important;
     transition: none !important;
     scroll-behavior: auto !important;
   }
-}
+} */
