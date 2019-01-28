@@ -377,6 +377,7 @@
 [sm~="op50"]{opacity:0.5}
 [sm~="op75"]{opacity:0.75}
 [sm~="op100"]{opacity:1}
+[sm~="bgsi"]{background-size:inherit}
 [sm~="bgsc"]{background-size:cover}
 [sm~="bgsct"]{background-size:contain}
 [sm~="bgpc"]{background-position:center}
@@ -476,6 +477,7 @@
 [sm~="fs2-4"]{font-size:2.4rem}
 [sm~="fs3-2"]{font-size:3.2rem}
 [sm~="fs6-4"]{font-size:6.4rem}
+[sm~="fs8-6"]{font-size:8.6rem}
 [sm~="lh1"]{line-height:1}
 [sm~="lh1-5"]{line-height:1.5}
 [sm~="fsn"]{font-style:normal}
