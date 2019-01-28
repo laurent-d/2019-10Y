@@ -8,9 +8,9 @@
     .on('enter', function (el) {
         el.classList.add("inview");
     })
-    .on('exit', function (el) {
-        el.classList.remove("inview");
-    });
+    // .on('exit', function (el) {
+    //     el.classList.remove("inview");
+    // });
 
 
     const init = function(){
