@@ -8,9 +8,6 @@ body{
         -ms-scroll-snap-type: y mandatory;
             scroll-snap-type: y mandatory;
             scroll-snap-stop: always; 
-            -webkit-scroll-snap-type: mandatory;
-                -ms-scroll-snap-type: mandatory;
-                    scroll-snap-type: mandatory;
             -webkit-scroll-snap-points-y: repeat(100vh);
                 -ms-scroll-snap-points-y: repeat(100vh);
                     scroll-snap-points-y: repeat(100vh);
