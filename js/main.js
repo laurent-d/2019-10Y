@@ -15,6 +15,16 @@
         console.log("offview");
     });
 
+    inView('.first','.last')
+    .on('enter', function (el) {
+        // el.classList.add("inview");
+        console.log("first last entry");
+    })
+    .on('exit', function (el) {
+        // el.classList.remove("inview");
+        console.log("first last exit");
+    });
+
 
     const init = function(){
         // cssScrollSnapPolyfill();
