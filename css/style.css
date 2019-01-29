@@ -14,17 +14,16 @@ body{
             -webkit-scroll-snap-points-y: repeat(100vh);
                 -ms-scroll-snap-points-y: repeat(100vh);
                     scroll-snap-points-y: repeat(100vh);
-            scroll-snap-type: y mandatory;
 }
 
 .container {
     /* flex-basis: 50%; */
-    max-height: 100vh;
+    /* max-height: 100vh;
     overflow-y: scroll;
     border: 1px solid gray;
     -ms-scroll-snap-type: y mandatory;
     scroll-snap-type: y mandatory;
-    display: content;
+    display: content; */
   }
 
   .wrapper {
@@ -51,7 +50,7 @@ li.rvl:nth-child(13) {-webkit-transition-delay: .6s;-o-transition-delay: .6s;tra
 
 section {
     scroll-snap-align: start;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
 }
 
