@@ -230,6 +230,16 @@ figure {
     fill: red;
 }
 
+footer, header{
+    opacity: 1;
+    -webkit-transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.last-in footer {
+    opacity: 0;
+}
+
 
 .inview img.movedown {
     -webkit-animation: mover .7s infinite  alternate;
