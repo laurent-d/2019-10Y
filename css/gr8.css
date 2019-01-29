@@ -200,6 +200,7 @@
 .vwmx100{max-width:100vw}
 .vh40{height:40vh}
 .vh50{height:50vh}
+.vh75{height:75vh}
 .vh100{height:100vh}
 .vhmn50{min-height:50vh}
 .vhmn100{min-height:100vh}
@@ -647,6 +648,7 @@
 [md~="op100"]{opacity:1}
 [md~="bgsc"]{background-size:cover}
 [md~="bgsct"]{background-size:contain}
+[md~="bgsi"]{background-size:inherit}
 [md~="bgpc"]{background-position:center}
 [md~="bgpt"]{background-position:top}
 [md~="bgpr"]{background-position:right}
