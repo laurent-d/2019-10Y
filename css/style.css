@@ -219,6 +219,7 @@ figure {
 
   .social > a {
       margin: .5rem;
+      display: inline-block;
   }
   .social img {
       width: 8vw;
@@ -246,3 +247,6 @@ figure {
 small{
     font-size: .7rem
 }
+
+.email-invalid{ color: indianred}
+.thankyou_message{color: green}
