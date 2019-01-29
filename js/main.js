@@ -4,7 +4,9 @@
 //         this.classList.add("mystyle")
 //     });
 
-    //inView.offset(-100);
+    inView.offset(-100);
+    inView.threshold(0.5);
+    
     inView('.rvl')
     .on('enter', function (el) {
         el.classList.add("inview");
