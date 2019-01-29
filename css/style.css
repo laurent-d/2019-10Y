@@ -7,7 +7,7 @@ body{
     -webkit-scroll-snap-type: y mandatory;
         -ms-scroll-snap-type: y mandatory;
             scroll-snap-type: y mandatory;
-            scroll-snap-stop: always;
+            scroll-snap-stop: always; 
             -webkit-scroll-snap-type: mandatory;
                 -ms-scroll-snap-type: mandatory;
                     scroll-snap-type: mandatory;
@@ -16,6 +16,20 @@ body{
                     scroll-snap-points-y: repeat(100vh);
             scroll-snap-type: y mandatory;
 }
+
+.container {
+    /* flex-basis: 50%; */
+    max-height: 100vh;
+    overflow-y: scroll;
+    border: 1px solid gray;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+    display: content;
+  }
+
+  .wrapper {
+    /* display: flex; */
+  }
 
 li {
     list-style: none;
@@ -37,7 +51,7 @@ li.rvl:nth-child(13) {-webkit-transition-delay: .6s;-o-transition-delay: .6s;tra
 
 section {
     scroll-snap-align: start;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 
@@ -130,37 +144,28 @@ figure {
     }
   }
   
-  circle {
+  /* circle {
       fill:rgba(0,0,0,0);
     stroke-width:31.8309886184;
     stroke-dasharray: 0,0,0,100;
     stroke-dashoffset: 25;
-    /* -webkit-animation: pie1 3s ease forwards;
-    animation: pie1 3s ease forwards; */
-  }
+  } */
   
   .inview .pie1 {
-      fill:rgba(0,0,0,0);
+      fill:transparent;
     stroke-width:31.8309886184;
-    stroke-dasharray: 0,0,0,100;
-    stroke-dashoffset: 25;
+    stroke-dasharray: 0,0,0,90;
+    stroke-dashoffset: 26;
     -webkit-animation: pie1 3s ease forwards;
     animation: pie1 3s ease forwards;
     stroke:hsl(173,62%,39%);
+    -webkit-backface-visibility:hidden;
   }
   
   
-  .pie1 {
-    stroke:hsl(173,62%,39%);
-  }
-  .pie2 {
-    stroke:hsl(180,70%,50%);
-    -webkit-animation-name: pie2;
-    animation-name: pie2;
-  }
   
   .pie2 {
-      stroke: hsl(180, 13%, 23%);
+      stroke: transparent;
       -webkit-animation-name: pie2;
       animation-name: pie2;
       fill: #000;

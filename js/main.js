@@ -10,13 +10,14 @@
         el.classList.add("inview");
         console.log("inview");
     })
-    // .on('exit', function (el) {
-    //     el.classList.remove("inview");
-    //     console.log("offview");
-    // });
+    .on('exit', function (el) {
+        el.classList.remove("inview");
+        console.log("offview");
+    });
 
 
     const init = function(){
-        cssScrollSnapPolyfill()
+        // cssScrollSnapPolyfill();
+        // console.log("toto");
     }
     init();
